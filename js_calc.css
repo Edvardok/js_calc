@@ -1,0 +1,86 @@
+.calcul {
+  color: white;
+  background-color: black;
+  max-width: calc(var(--width-button) * 4 + 20px * 5);
+  padding: 20px;
+  box-sizing: border-box;
+  --width-button: 80px;
+  --height-button: 80px;
+}
+
+.calcul li {
+  width: var(--width-button);
+  height: var(--height-button);
+  font-size: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calcul li:hover {
+  background: rgb(66, 66, 66);
+  cursor: pointer;
+}
+
+.output {
+  font-size: 100px;
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.calcul ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.actions_list > li {
+  background-color: orange;
+}
+
+ul.digits > li {
+  background-color: gray;
+}
+
+ul.operations > li {
+  background-color: gainsboro;
+  color: black;
+}
+
+.actions_list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+.operations {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.digits {
+  display: flex;
+  flex-flow: row wrap-reverse;
+  gap: 20px;
+  justify-content: start;
+}
+
+.input {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+}
+
+.numbers {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.digits li:first-child {
+  width: calc(var(--width-button) * 2 + 20px);
+  border-radius: 50px;
+}
